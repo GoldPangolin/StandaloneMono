@@ -13,14 +13,10 @@
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s",
-      "!{projectRoot}/cypress/**/*",
-      "!{projectRoot}/**/*.cy.[jt]s?(x)",
-      "!{projectRoot}/cypress.config.[jt]s"
+      "!{projectRoot}/test-setup.[jt]s"
     ],
     "sharedGlobals": []
   },
-  "nxCloudAccessToken": "MzZiODhmZDMtM2MwZS00NTQ0LWFjOTctNzQwMjAyOWQzY2E2fHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "@angular-devkit/build-angular:browser": {
       "cache": true,
@@ -40,22 +36,9 @@
       "options": {
         "targetName": "test"
       }
-    },
-    {
-      "plugin": "@nx/cypress/plugin",
-      "options": {
-        "targetName": "e2e",
-        "componentTestingTargetName": "component-test"
-      }
     }
   ],
   "generators": {
-    "@nx/angular:application": {
-      "e2eTestRunner": "cypress",
-      "linter": "eslint",
-      "style": "scss",
-      "unitTestRunner": "jest"
-    },
     "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest"

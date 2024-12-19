@@ -8,4 +8,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './ui-label.component.html',
   styleUrl: './ui-label.component.css',
 })
-export class UiLabelComponent {}
+export class UiLabelComponent {
+  constructor() {
+    for(let i = 0 ; i < 1000; i++) {
+    }
+  }
+}
