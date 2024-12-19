@@ -1,5 +1,5 @@
-export * from './lib/ui/ui.component';
+export * from './lib/components/ui/ui.component';
 
-export * from './lib/ui-button/ui-button.component';
+export * from './lib/components/ui-button/ui-button.component';
 
-export * from './lib/ui-label/ui-label.component';
+export * from './lib/components/ui-label/ui-label.component';
